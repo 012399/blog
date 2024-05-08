@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="How to fix the “Missing write access” error when using npm遇到问题12345678910111213141516171819202122npm WARN checkPermissions Missing write access to &#x2F;usr&#x2F;local&#x2F;lib&#x2F;node_modulesnpm ERR! code EACCESnpm ER">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2024/05/07/How%20to%20fix%20the%20Missing%20write%20access%20error%20when%20using%20npm/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="How to fix the “Missing write access” error when using npm遇到问题12345678910111213141516171819202122npm WARN checkPermissions Missing write access to &#x2F;usr&#x2F;local&#x2F;lib&#x2F;node_modulesnpm ERR! code EACCESnpm ER">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-05-07T07:49:29.965Z">
+<meta property="article:modified_time" content="2024-05-07T07:49:29.965Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-How to fix the Missing write access error when using npm" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/05/07/How%20to%20fix%20the%20Missing%20write%20access%20error%20when%20using%20npm/" class="article-date">
+  <time class="dt-published" datetime="2024-05-07T07:49:29.965Z" itemprop="datePublished">2024-05-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="How-to-fix-the-“Missing-write-access”-error-when-using-npm"><a href="#How-to-fix-the-“Missing-write-access”-error-when-using-npm" class="headerlink" title="How to fix the “Missing write access” error when using npm"></a>How to fix the “Missing write access” error when using npm</h1><h2 id="遇到问题"><a href="#遇到问题" class="headerlink" title="遇到问题"></a>遇到问题</h2><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">npm WARN checkPermissions Missing write access to /usr/local/lib/node<span class="built_in">_</span>modules</span><br><span class="line">npm ERR! code EACCES</span><br><span class="line">npm ERR! syscall access</span><br><span class="line">npm ERR! path /usr/local/lib/node<span class="built_in">_</span>modules</span><br><span class="line">npm ERR! errno -13</span><br><span class="line">npm ERR! Error: EACCES: permission denied, access &#x27;/usr/local/lib/node<span class="built_in">_</span>modules&#x27;</span><br><span class="line">npm ERR!  [Error: EACCES: permission denied, access &#x27;/usr/local/lib/node<span class="built_in">_</span>modules&#x27;] &#123;</span><br><span class="line">npm ERR!   errno: -13,</span><br><span class="line">npm ERR!   code: &#x27;EACCES&#x27;,</span><br><span class="line">npm ERR!   syscall: &#x27;access&#x27;,</span><br><span class="line">npm ERR!   path: &#x27;/usr/local/lib/node<span class="built_in">_</span>modules&#x27;</span><br><span class="line">npm ERR! &#125;</span><br><span class="line">npm ERR! </span><br><span class="line">npm ERR! The operation was rejected by your operating system.</span><br><span class="line">npm ERR! It is likely you do not have the permissions to access this file as the current user</span><br><span class="line">npm ERR! </span><br><span class="line">npm ERR! If you believe this might be a permissions issue, please double-check the</span><br><span class="line">npm ERR! permissions of the file and its containing directories, or try running</span><br><span class="line">npm ERR! the command again as root/Administrator.</span><br><span class="line"></span><br><span class="line">npm ERR! A complete log of this run can be found in:</span><br><span class="line">npm ERR!     /Users/jdx/.npm/<span class="built_in">_</span>logs/2024-05-07T07<span class="built_in">_</span>43<span class="built_in">_</span>26<span class="built_in">_</span>440Z-debug.log</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h3><p>​	解决mac用户权限问题，关键词<font color="red">permission denied</font></p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chown -R $USER /usr/local/lib/node_modules</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/05/07/How%20to%20fix%20the%20Missing%20write%20access%20error%20when%20using%20npm/" data-id="clvxizd4z0000sthbensvbfi4" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2024/05/07/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">May 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/05/08/How-to-fix-the-Missing-write-access-error-when-using-npm/">How to fix the Missing write access error when using npm</a>
+          </li>
+        
+          <li>
+            <a href="/2024/05/07/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2024/05/07/How%20to%20fix%20the%20Missing%20write%20access%20error%20when%20using%20npm/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
